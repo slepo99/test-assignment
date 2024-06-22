@@ -23,6 +23,10 @@ border-radius: 80px;
 border: none;
 background-color: rgb(244, 224, 65);
 transition: all 0.6s ease;
+font-size: 16px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .btn:hover {
 background-color: rgb(255, 227, 2);
