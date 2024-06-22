@@ -5,6 +5,15 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `
+  //         @import "./src/css/style.scss";
+  //       `
+  //     }
+  //   }
+  // },
   plugins: [
     vue(),
     Components({
@@ -17,9 +26,6 @@ export default defineConfig({
         'vue/macros',
         'vue-router',
         '@vueuse/core',
-        {
-          '@vueuse/integrations/useNProgress': ['useNProgress'],
-        },
       ],
       dts: true,
       dirs: [
@@ -34,7 +40,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
 })
