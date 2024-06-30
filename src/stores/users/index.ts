@@ -38,6 +38,7 @@ export const useUsersStore = defineStore('users', {
     },
     setUsers(users: UserModelList[]) {
       this.usersList.push(...users)
+      this.usersList.sort((a, b) => b.registration_timestamp - a.registration_timestamp);
     },
     async loadUsersList() {
       this.currentPage++
