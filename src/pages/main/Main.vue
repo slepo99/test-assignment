@@ -3,5 +3,6 @@
   <Header />
   <Banner />
   <UsersList />
+  <SignUpForm />
 </template>
 <style lang="scss" scoped></style>
