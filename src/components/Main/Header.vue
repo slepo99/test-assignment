@@ -1,20 +1,12 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 <template>
   <header>
     <div class="container">
       <div class="wrapper">
         <img class="wrapper__logo" src="../../assets/images/main/Logo.svg" alt="" />
         <div class="wrapper__options">
-            <Button 
-            width="100px" 
-            title="Users"
-            />
-            <Button 
-            width="100px" 
-            title="Sign up"
-            />
+          <Button width="100px" title="Users" />
+          <Button width="100px" title="Sign up" />
         </div>
       </div>
     </div>

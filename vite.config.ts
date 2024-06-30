@@ -4,6 +4,7 @@ import path from 'node:path'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 // https://vitejs.dev/config/
+
 export default defineConfig({
   // css: {
   //   preprocessorOptions: {
@@ -14,6 +15,7 @@ export default defineConfig({
   //     }
   //   }
   // },
+
   plugins: [
     vue(),
     Components({
@@ -32,6 +34,9 @@ export default defineConfig({
       vueTemplate: true,
     }),
   ],
+  server: {
+    port: 8000,
+  },
   resolve: {
     alias: {
       '@/': `${path.resolve(__dirname, 'src')}/`,
